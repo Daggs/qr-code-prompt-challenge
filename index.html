@@ -20,22 +20,28 @@
 
       body {
         background-color: hsl(212, 45%, 89%);
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
       }
 
       .qr-code-card {
-        margin: 0 auto;
-        width: 375px;
-        background-color: white;
-        padding: 20px;
-        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        border-radius: 13px;
+        padding: 13px;
+        width: 310px;
       }
 
       img {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 375px;
+        width: 310px;
         border-radius: 10px;
       }
 
@@ -61,6 +67,12 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+
+      footer {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+      }
     </style>
   </head>
   <body>
@@ -74,11 +86,13 @@
       </p>
     </div>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Travis Miller</a>.
-    </div> -->
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Travis Miller</a>.
+      </div>
+    </footer>
   </body>
 </html>
